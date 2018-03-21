@@ -5,9 +5,7 @@
 * https://www.thecocktaildb.com/ 
 * https://www.npmjs.com/package/cocktail-api-search  
 
-**It is not mobile friendly or optimized, used as a learning experience to expand my knowledge on React.**
-
-*  *Not mobile / responsive friendly. This was just to learn React and its basic principles.*
+**It is not mobile friendly/optimized or too responsive, used as a learning experience to expand my knowledge on React.**
 
 
 
