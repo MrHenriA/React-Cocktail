@@ -1,0 +1,89 @@
+.search-bar {
+  margin: 20px;
+  position: sticky;
+  top: 3%;
+  z-index: 1;
+  margin-right: 45%;
+}
+
+.search-title {
+  margin-left: 50px;
+  padding-right: 3px;
+}
+
+.search-bar input {
+  width: 55%;
+  padding-left: 5px;
+}
+
+img.media-object {
+  max-width: 6rem;
+}
+
+img.main-img {
+  width: 80%;
+  height: 75%;
+}
+
+.drink-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.sticky-detail {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75%;
+}
+
+.sticky-pic {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8%;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group {
+  position: relative;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  margin: 20%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
