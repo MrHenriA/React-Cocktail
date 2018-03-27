@@ -1,89 +1,197 @@
+
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
 .search-bar {
-  margin: 20px;
-  position: sticky;
-  top: 3%;
-  z-index: 1;
-  margin-right: 45%;
+    margin: 20px;
+    position: sticky;
+    top: 3%;
+    z-index: 1;
+    margin-right: 40%;
 }
 
 .search-title {
-  margin-left: 50px;
-  padding-right: 3px;
+    margin-left: 50px;
+    padding-right: 3px;
 }
 
 .search-bar input {
-  width: 55%;
-  padding-left: 5px;
+    padding-left: 5px;
 }
 
 img.media-object {
-  max-width: 6rem;
+    max-width: 6rem;
 }
 
 img.main-img {
-  width: 80%;
-  height: 75%;
+    width: 80%;
+    height: 75%;
 }
 
 .drink-detail .details {
-  margin-top: 10px;
-  padding: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    position: sticky;
 }
 
+
+.card-text{
+
+  text-align: center;
+}
 .sticky-detail {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 75%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 75%;
 }
 
 .sticky-pic {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 8%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 8%;
 }
 
 .list-group-item {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .list-group {
-  position: relative;
+    position: relative;
 }
 
 .list-group-item:hover {
-  background-color: #eee;
+    background-color: #eee;
 }
 
-.overflow {
-  overflow: hidden !important;
+.drinks-container {
+    margin-top: 5%;
+    overflow: auto;
+}
+
+.drinks-container {
+    overflow: auto;
+    width: 100vh
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-  position: absolute;
-  margin: 20%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
 }
 
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (max-width :320px) {
+  .drinks-container.col-md-4.list-group {
+      height: 20vh;
   }
-  100% {
-    transform: rotate(360deg);
-  }
+}
+
+
+
+@media only screen and (max-width :375px) {
+    .drinks-container.col-md-4.list-group {
+        height: 100vh;
+        width: 100vw;
+    }
+    div.sticky-detail.details.d-flex.justify-content-center {
+        margin: 0;
+        padding: 10px;
+    }
+    img.media-object {
+        max-width: 4rem;
+    }
+    img.main-img {
+        width: 50%;
+        height: 45%;
+    }
+}
+
+
+
+@media only screen and (max-width :411px) {
+    .drinks-container.col-md-4.list-group {
+        height: 20vh;
+    }
+}
+
+@media only screen and (max-width :425px) {
+    .drinks-container {
+        height: 40vw;
+        width: 100vh
+    }
+}
+
+@media only screen and (max-width :767px) {
+    .drinks-container {
+        height: 75vw;
+    }
+}
+
+@media only screen and (max-width :1024px) {
+    .drinks-container {
+        height: 60vw;
+    }
+}
+
+@media only screen and (max-width :1440px) {
+    .drinks-container {
+        height: 45vw;
+    }
+}
+
+@media only screen and (max-width :2560px) {
+    .drinks-container {
+        height: 40vw;
+    }
 }
