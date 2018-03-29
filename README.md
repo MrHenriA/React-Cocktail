@@ -9,5 +9,5 @@ https://MrHenryA.github.io/React-Cocktail/
 
 **It is not mobile friendly/optimized or too responsive, used as a learning experience to expand my knowledge on React.**
 
-
+ 
 
