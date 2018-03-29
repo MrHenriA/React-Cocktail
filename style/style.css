@@ -1,6 +1,3 @@
-
-
-
 /* width */
 
 ::-webkit-scrollbar {
@@ -49,6 +46,7 @@
 
 img.media-object {
     max-width: 6rem;
+    padding-right: 10px;
 }
 
 img.main-img {
@@ -62,11 +60,10 @@ img.main-img {
     position: sticky;
 }
 
-
-.card-text{
-
-  text-align: center;
+.card-text {
+    text-align: center;
 }
+
 .sticky-detail {
     position: -webkit-sticky;
     position: sticky;
@@ -81,6 +78,7 @@ img.main-img {
 
 .list-group-item {
     cursor: pointer;
+    border-right-style: none!important;
 }
 
 .list-group {
@@ -94,11 +92,14 @@ img.main-img {
 .drinks-container {
     margin-top: 5%;
     overflow: auto;
-}
-
-.drinks-container {
-    overflow: auto;
-    width: 100vh
+    border-left: rgba(0, 0, 0, 0.2) 1px solid;
+    border-top-left-radius: 4%;
+    border-top: rgba(0, 0, 0, 0.2) 1px solid;
+    border-top-right-radius: 2%;
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 5px 2px 15px rgba(100, 100, 100, 0.5);
 }
 
 .loader {
@@ -130,34 +131,34 @@ img.main-img {
     }
 }
 
-
 @media only screen and (max-width :320px) {
-  .drinks-container.col-md-4.list-group {
-      height: 20vh;
-  }
+    .drinks-container.col-md-4.list-group {
+        height: 20vh;
+    }
 }
-
-
 
 @media only screen and (max-width :375px) {
     .drinks-container.col-md-4.list-group {
         height: 100vh;
         width: 100vw;
     }
-    div.sticky-detail.details.d-flex.justify-content-center {
-        margin: 0;
-        padding: 10px;
+    .sticky-detail.details.d-flex.justify-content-center {
+        margin: 0 auto;
+        padding: 5px 0;
+        width: 60vw;
+        height: 30vh;
+    }
+    p.card-text {
+        font-size: 1rem;
     }
     img.media-object {
         max-width: 4rem;
     }
     img.main-img {
-        width: 50%;
-        height: 45%;
+        width: 45%;
+        height: 40%;
     }
 }
-
-
 
 @media only screen and (max-width :411px) {
     .drinks-container.col-md-4.list-group {
