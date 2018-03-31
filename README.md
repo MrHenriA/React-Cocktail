@@ -7,7 +7,7 @@ https://MrHenryA.github.io/React-Cocktail/
 * https://www.thecocktaildb.com/ 
 * https://www.npmjs.com/package/cocktail-api-search  
 
-**It is not mobile friendly/optimized or too responsive, used as a learning experience to expand my knowledge on React.**
+**It is not mobile friendly/optimized or too responsive, used as a learning experience to expand my knowledge on React. Design idea was uploaded and this will be a work in progress**
 
  
 
